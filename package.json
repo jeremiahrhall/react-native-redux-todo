@@ -1,0 +1,80 @@
+{
+  "name": "ReactNativeBoilerplate",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "test": "./node_modules/.bin/jest",
+    "test-watch": "./node_modules/.bin/jest --watch"
+  },
+  "dependencies": {
+    "art": "^0.10.0",
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.23",
+    "bluebird": "^3.0.5",
+    "color": "^0.10.1",
+    "eslint": "^1.8.0",
+    "eslint-plugin-react": "^3.6.3",
+    "immutable": "^3.7.5",
+    "invariant": "^2.1.1",
+    "jest-cli": "^0.7.0",
+    "klass": "^1.4.1",
+    "lodash": "^3.10.1",
+    "minilog": "^2.0.8",
+    "moment": "^2.10.6",
+    "react": "^0.14.2",
+    "react-native": "^0.14.1",
+    "react-native-swipeout": "^2.0.9",
+    "react-redux": "^3.1.0",
+    "react-timer-mixin": "^0.13.3",
+    "redux": "^3.0.4",
+    "redux-persist": "^1.0.0",
+    "redux-persist-immutable": "^1.0.5",
+    "redux-tcomb": "^0.1.2",
+    "redux-thunk": "^1.0.0",
+    "reselect": "^2.0.0",
+    "testcheck": "^0.1.4",
+    "transit-immutable-js": "^0.4.0",
+    "transit-js": "^0.8.837"
+  },
+  "jest": {
+    "scriptPreprocessor": "jestSupport/scriptPreprocess.js",
+    "setupEnvScriptFile": "node_modules/react-native/jestSupport/env.js",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "packager/react-packager/src/Activity/"
+    ],
+    "unmockedModulePathPatterns": [
+      "node_modules/bluebird",
+      "node_modules/debug",
+      "node_modules/immutable",
+      "node_modules/intl-messageformat",
+      "node_modules/klass",
+      "node_modules/lodash",
+      "node_modules/react",
+      "node_modules/minilog",
+      "node_modules/json-stringify-safe",
+      "invariant",
+      "js/model",
+      "js/constants",
+      "js/util",
+      "promise",
+      "source-map"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx"
+    ],
+    "modulePathIgnorePatterns": [
+      "newrelic"
+    ],
+    "testFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "globals": {
+      "__DEV__": true
+    }
+  }
+}
