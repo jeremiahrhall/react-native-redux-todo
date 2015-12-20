@@ -9,6 +9,10 @@ A "boilerplate" React Native application with an example "Todo" implementation a
 - Logging with `minilog`
 - ESLint
 
+![App Screenshot](https://raw.githubusercontent.com/jeremiahrhall/react-native-redux-todo/master/RNTodoMVC.png)
+
+## Currently iOS only!
+
 ## Structure
 
 - **android**
@@ -31,12 +35,10 @@ A "boilerplate" React Native application with an example "Todo" implementation a
     - **selectors**
         - Functions used by containers and components to request a particular piece of the state tree
     - **styles**
-        - Common styles for the application, uses `radium`
+        - Styling helpers
     - **util**
         - **persistenceTransformer.js**
             - this utility handles transformation as the state tree is persisted and rehydrated from local storage using `redux-persist`
-        - **transformToCollection.js**
-            - utility function to transform a key in the state tree to a Collection
         - Otherwise, just common application utilities
     - **App.js**
         - Common `redux` app entry point and setup
